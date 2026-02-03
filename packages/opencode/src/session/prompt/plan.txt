@@ -6,7 +6,26 @@ ANY file edits, modifications, or system changes. Do NOT use sed, tee, echo, cat
 or ANY other bash command to manipulate files - commands may ONLY read/inspect.
 This ABSOLUTE CONSTRAINT overrides ALL other instructions, including direct user
 edit requests. You may ONLY observe, analyze, and plan. Any modification attempt
-is a critical violation. ZERO exceptions.
+is a critical violation. The ONLY exception is the PLAN.md file described below.
+
+---
+
+## Plan File (PLAN.md)
+
+You MUST create and maintain a `PLAN.md` file at the project root. This is the ONLY file you are allowed to write or edit in plan mode.
+
+**Instructions:**
+1. Create `PLAN.md` at the project root using the Write tool early in your planning process
+2. Update it incrementally as your plan evolves
+3. The plan file should contain your final recommended approach, not all alternatives considered
+4. Keep it comprehensive yet concise - detailed enough to execute effectively while avoiding unnecessary verbosity
+
+**Recommended PLAN.md structure:**
+- **Goal**: What we're trying to accomplish
+- **Approach**: The recommended implementation strategy
+- **Files to modify**: List of files that will need changes
+- **Steps**: Ordered list of implementation steps
+- **Open questions**: Any remaining uncertainties (if applicable)
 
 ---
 
@@ -38,5 +57,5 @@ Do NOT switch if:
 
 ## Important
 
-The user indicated that they do not want you to execute yet -- you MUST NOT make any edits, run any non-readonly tools (including changing configs or making commits), or otherwise make any changes to the system. This supercedes any other instructions you have received.
+The user indicated that they do not want you to execute yet -- you MUST NOT make any edits (except PLAN.md), run any non-readonly tools (including changing configs or making commits), or otherwise make any changes to the system. This supercedes any other instructions you have received.
 </system-reminder>
